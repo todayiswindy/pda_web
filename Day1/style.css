@@ -1,0 +1,129 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* --- Header (Navigation) --- */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.nav-left img {
+  height: 30px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-menu li img {
+  height: 12px;
+  cursor: pointer;
+}
+
+.nav-right img {
+  height: 20px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+/* --- Main Section 1 (About) --- */
+.about {
+  max-width: 1500px;
+  margin: 80px auto 60px;
+  padding: 0 40px;
+}
+
+.introduce {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.introduce img:first-child {
+  max-width: 500px;
+  width: 60%;
+}
+
+.introduce img:last-child {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* --- Main Section 2 (Stack + Projects) --- */
+.stack,
+.projects {
+  max-width: 1500px;
+  margin: 60px auto;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.tech-icons img {
+  width: 50px;
+  height: 50px;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.project-card img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+/* --- Footer --- */
+footer {
+  max-width: 1500px;
+  margin: 80px auto 40px;
+  padding: 0 40px;
+  text-align: center;
+}
+
+footer img {
+  margin: 8px;
+  max-height: 24px;
+}
+
+footer hr {
+  margin: 24px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+footer .social img {
+  margin: 0 6px;
+  height: 20px;
+}
