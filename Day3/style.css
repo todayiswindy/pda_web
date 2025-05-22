@@ -1,0 +1,285 @@
+/* 공통 구조 */
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 전체 레이아웃을 감싸는 컨테이너 */
+.container {
+    max-width: 1228px;
+    margin: 0 auto;
+    padding: 41px 41px;
+}
+
+/* 네비게이션 영역 */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 200px;
+}
+
+.top-logo {
+    width: 97px;
+    height: 59px;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-items li {
+    color: #A7A7A7;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    list-style: none;
+}
+
+.top-sns {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.top-sns img {
+    width: 30px;
+    height: 30px;
+}
+
+header {
+    padding-bottom: 300px;
+    padding-top: 300px;
+}
+
+#introduce {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    max-width: 1228px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: nowrap;
+    margin-bottom: 300px;
+}
+
+.introduce-text {
+    flex: 1 1 600px;
+    min-width: 0;
+}
+
+.introduce-text h1 {
+    color: #42446e;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: -1px;
+    word-break: keep-all;
+    white-space: normal;
+    margin: 0;
+}
+
+.introduce-text h1 span {
+    background-clip: text;
+}
+
+.profile-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #66d9ef;
+    flex-shrink: 0;
+}
+
+/* Section 설명 영역 */
+.section-text {
+    padding-bottom: 138px;
+    text-align: center;
+}
+
+.section-text h2 {
+    color: #42446e;
+    font-size: 48px;
+    font-weight: 700;
+    padding-bottom: 40px;
+}
+
+.section-text p {
+    color: #666;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* 기술 스택 */
+.tech-stacks {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+}
+
+.tech-stacks li {
+    text-align: center;
+    display: flex;
+    list-style: none;
+    width: 120px;
+    height: 120px;
+    z-index: 2;
+}
+
+/* 프로젝트 */
+#tech-stack {
+    padding-bottom: 300px;
+}
+
+#project-section {
+    padding-bottom: 300px;
+}
+
+.project-items {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.project-item {
+    box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.project-thumbnail {
+    width: 100%;
+    height: 256px;
+    overflow: hidden;
+}
+
+.project-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.project-content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.project-content h4 {
+    color: #42446e;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.project-link {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.project-link a {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-decoration-line: underline;
+}
+
+.project-desc {
+    color: #666;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.project-tech-stack {
+    color: #42446e;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-upper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    width: 97px;
+    height: 59px;
+}
+
+.footer-contact {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.footer-contact a {
+    color: #A7A7A7;
+    text-decoration: none;
+}
+
+footer .footer-links {
+    display: flex;
+    gap: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+.hr {
+    width: 100%;
+    border-bottom: solid 1px #666;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.madeby {
+    color: #A7A7A7;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.madeby span {
+    background-clip: text;
+}
+
+.nav-items.mobile {
+    display: none;
+}
